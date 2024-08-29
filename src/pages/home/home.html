@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title-container">
+      <ion-icon name="medkit" class="logo-icon"></ion-icon> Farmácia
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button block (click)="showPrompt()">
+    <ion-icon name="person-add" class="button-icon"></ion-icon> Adicionar Cliente
+  </button>
+
+  <ion-list>
+    <ion-item *ngFor="let paciente of pacientes">
+      <h2><strong>{{ paciente.Nome }}</strong></h2>
+      <p>Telefone: {{ paciente.Telefone }}</p>
+      <p>Sintomas: {{ paciente.Sintomas.join(', ') }}</p>
+      <p>Remédios: {{ paciente.Remedios.join(', ') }}</p>
+      <p>Necessita Receita Médica: {{ paciente.ReceitaMedica ? 'Sim' : 'Não' }}</p>
+      <button ion-button clear item-end (click)="verMais(paciente)">Ver Mais</button>
+      <button ion-button clear item-end color="danger" (click)="showConfirm(paciente)">Excluir</button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

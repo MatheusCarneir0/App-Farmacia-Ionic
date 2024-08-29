@@ -22,7 +22,7 @@ Este projeto é um aplicativo CRUD para uma farmácia desenvolvido com Ionic 3 e
 
 🖥️ **Como Executar o Projeto**
 
-- 🖥️ [Video no YouTube explicando informações](https://youtu.be/72T6s_gHRJM)
+- 🖥️ [Video no YouTube explicando informações](https://www.youtube.com/watch?v=4cDWq1dEMoE)
 
 **Pré-requisitos**
 
